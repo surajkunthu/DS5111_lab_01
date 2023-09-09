@@ -2,7 +2,7 @@ default:
 	@cat makefile
 
 synthetic_data.csv:
-	wget https://raw.gist.github.com/Niarfe/25100a860cbb660150a3fec87378d8ac
+	wget https://gist.github.com/Niarfe/25100a860cbb660150a3fec87378d8ac
 
 square_wave.png:
 	gnuplot -e "set datafile separator ','; set term png; set output 'square_wave.png'; plot 'synthetic_data.csv' using 1:2 with lines"
